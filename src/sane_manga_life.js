@@ -22,6 +22,7 @@
 	var imgs = document.querySelectorAll("p.imagePage > img")
 	var w = window.open()
 	w.document.head.innerHTML += '<meta name="viewport" content="width=device-width, initial-scale=1">'
+	w.document.body.style.margin = 0
 	for (var i = 0, len = imgs.length; i < len; i++) {
 		w.document.body.appendChild(imgs[i])
 		imgs[i].style.cssText = ""
