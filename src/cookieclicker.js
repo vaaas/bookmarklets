@@ -2,6 +2,11 @@
 	var e = document.createEvent("HTMLEvents")
 	e.initEvent("click", true, true)
 	var big = document.querySelector("#bigCookie")
+	var hundred = document.querySelector("#storeBulk100")
+	var all = document.querySelector("#storeBulkMax")
+	var buy = document.querySelector("#storeBulkBuy")
+	var sell = document.querySelector("#storeBulkSell")
+	var cursors = document.querySelector("#product0")
 	setInterval(function() { big.dispatchEvent(e) }, 20)
 	setInterval(function() {
 		var a = document.querySelectorAll(".shimmer")
@@ -10,4 +15,13 @@
 	setInterval(function() {
 		Game.wrinklers.forEach(wrinkler => wrinkler.hp = 0)
 	}, 10000)
+	setInterval(function() {
+		sell.dispatchEvent(e)
+		all.dispatchEvent(e)
+		cursors.dispatchEvent(e)
+		buy.dispatchEvent(e)
+		hundred.dispatchEvent(e)
+		for (let i = 0; i < 5; i++)
+			cursors.dispatchEvent(e)
+	}, 10100)
 })()
