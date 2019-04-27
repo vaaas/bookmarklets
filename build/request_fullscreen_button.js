@@ -1,0 +1,1 @@
+javascript:(function(){const e=e=>e.requestFullscreen();const t=()=>{const t=document.createElement("button");t.innerHTML="fullscreen";t.setAttribute("style","position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 9999");t.onclick=(()=>{e(document.documentElement);t.remove()});return t};document.body.appendChild(t())})();
