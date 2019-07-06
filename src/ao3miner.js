@@ -52,7 +52,7 @@ function rfc822(string) {
 	const d = new Date(string)
 	return `${days[d.getDay()]}, ${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()} 00:00:00 GMT` }
 
-const serialize = item => `<item>
+const serialise = item => `<item>
 	<title>${item.title}</title>
 	<link>${item.url}</link>
 	<guid>${item.url}</guid>
