@@ -72,13 +72,9 @@ const serialise = item => `<item>
 	]]></description>
 </item>`
 
-const win = open()
-const doc = win.document
-doc.write(`<meta charset="utf-8"><pre>` +
+console.log(
 	$$("ol.work.index.group > li.own.work")
 	.map(extract)
 	.map(serialise)
-	.join("\n") +
-	`</pre>`)
-
+	.join("\n"))
 })()
