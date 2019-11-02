@@ -1,0 +1,17 @@
+.contain-push
+{ display: flex;
+flex-wrap: wrap; }
+
+.thumbnail-preview img
+{ width: 20em;
+height: 20em;
+object-fit: cover; }
+
+.thumbnail-preview
+{ display: block;
+background: none;
+margin: 0;
+max-height: inherit;
+max-width: inherit;
+border: none;
+padding: 0; }
